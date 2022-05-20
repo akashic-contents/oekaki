@@ -32,8 +32,8 @@ function main(): void {
 		});
 
 		/**
-     * ドットを生成
-     */
+		 * ドットを生成
+		 */
 		function createDot(p: g.CommonOffset): g.FilledRect {
 			return new g.FilledRect({
 				scene: scene,
@@ -48,8 +48,8 @@ function main(): void {
 		}
 
 		/**
-     * ドットで構成された線を描く
-     */
+		 * ドットで構成された線を描く
+		 */
 		function draw(ev: g.PointMoveEvent | g.PointUpEvent): void {
 			const rad = Math.atan2(ev.prevDelta.y, ev.prevDelta.x);
 			const step = { x: Math.cos(rad), y: Math.sin(rad) };
@@ -69,8 +69,8 @@ function main(): void {
 		}
 
 		/**
-     * 線を g.Sprite に変換
-     */
+		 * 線を g.Sprite に変換
+		 */
 		const convertToSprite = (target: g.E): g.Sprite => {
 			const min = { x: 0, y: 0 };
 			const max = { x: 0, y: 0 };
